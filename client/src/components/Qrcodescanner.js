@@ -1,18 +1,22 @@
-import React, {useState, useRef} from 'react';
-import {Container, Card, CardContent, makeStyles, Grid, TextField, Button} from '@material-ui/core';
-import QRCode from 'qrcode';
-import QrReader from 'react-qr-reader';
+import React, {useState} from 'react';
+import {makeStyles} from '@material-ui/core';
 import '../styles/Qrcodescanner.css';
 import axios from 'axios';
+import BarcodeScannerComponent from "react-qr-barcode-scanner";
 
-function Qrcodescanner() { 
-  const [scanResultWebCam, setScanResultWebCam] =  useState('');
-  const classes = useStyles();
-  const qrRef = useRef(null);
+import {
+  Link
+} from "react-router-dom";
+
+
+function Qrcodescanner() {
   const [name, setName] = useState(""); 
   const [type, setType] = useState("");
   const [desc, setDesc] = useState("");
   const [barcode, setBarcode] = useState("");
+
+
+
 
   const onSubmitHandler = e => {
     e.preventDefault();
@@ -24,32 +28,13 @@ function Qrcodescanner() {
     })
         .then(res=>console.log(res))
         .catch(err=>console.log(err))
+        window.location.reload(false);
 }
 
-  const handleErrorWebCam = (error) => {
-    console.log(error);
-  }
-  const handleScanWebCam = (result) => {
-    if (result){
-        setScanResultWebCam(result);
-        setBarcode(result);
-    }
-   }
   return (
     <div>
           <div className='displayf'>
               
-                <div className="widthtwo">
-                    <h3>Qr Code Scan by Web Cam</h3>
-                    <QrReader
-                    delay={300}
-                    style={{width: '100%'}}
-                    onError={handleErrorWebCam}
-                    onScan={handleScanWebCam}
-                    />
-                    <h3>Scanned By WebCam Code: {scanResultWebCam}</h3>
-                </div>
-                <div>
                 <form onSubmit={onSubmitHandler}>
             <p>
                 <label>Product Name</label><br/>
@@ -77,6 +62,29 @@ function Qrcodescanner() {
             </p>
             <input type="submit"/>
         </form>
+                {/* <div className="widthtwo">
+                    <h3>Scan the code for your </h3>
+                    <QrReader
+                    delay={300}
+                    style={{width: '100%'}}
+                    onError={handleErrorWebCam}
+                    onScan={handleScanWebCam}
+                    />
+                    <h3>Scanned By WebCam Code: {scanResultWebCam}</h3>
+                </div> */}
+
+                <div>
+                <BarcodeScannerComponent
+                    width={500}
+                    height={400}
+                    onUpdate={(err, result) => {
+                      if (result) setBarcode(result.text);
+                    }}
+                  />
+                  <p>{barcode}</p>
+
+                </div>
+                <div>
 
 
                 </div>
