@@ -4,10 +4,6 @@ import '../styles/Qrcodescanner.css';
 import axios from 'axios';
 import BarcodeScannerComponent from "react-qr-barcode-scanner";
 
-import {
-  Link
-} from "react-router-dom";
-
 
 function Qrcodescanner() {
   const [name, setName] = useState(""); 
@@ -62,16 +58,6 @@ function Qrcodescanner() {
             </p>
             <input type="submit"/>
         </form>
-                {/* <div className="widthtwo">
-                    <h3>Scan the code for your </h3>
-                    <QrReader
-                    delay={300}
-                    style={{width: '100%'}}
-                    onError={handleErrorWebCam}
-                    onScan={handleScanWebCam}
-                    />
-                    <h3>Scanned By WebCam Code: {scanResultWebCam}</h3>
-                </div> */}
 
                 <div>
                 <BarcodeScannerComponent
