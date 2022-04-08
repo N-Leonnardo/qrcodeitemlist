@@ -1,10 +1,10 @@
 import './App.css';
-import Qrcodescanner from './components/Qrcodescanner';
+import Main from './views/Main.js';
 
 function App() {
   return (
     <div className="App">
-      <Qrcodescanner />
+      <Main />
     </div>
   );
 }

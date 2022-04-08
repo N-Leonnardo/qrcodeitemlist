@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {makeStyles} from '@material-ui/core';
 import '../styles/Qrcodescanner.css';
 import axios from 'axios';
 import BarcodeScannerComponent from "react-qr-barcode-scanner";
@@ -80,21 +79,5 @@ function Qrcodescanner() {
   );
 }
 
-const useStyles = makeStyles((theme) => ({
-    conatiner: {
-      marginTop: 10
-    },
-    title: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems:  'center',
-      background: '#3f51b5',
-      color: '#fff',
-      padding: 20
-    },
-    btn : {
-      marginTop: 10,
-      marginBottom: 20
-    }
-}));
+;
 export default Qrcodescanner;
