@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/ItemList.css'
 
-export default props => {
+const ItemList = (props) => {
     return (
-        <div>
+        <div className='displayF'>
             <h1>Item List</h1>
-            <table className='greyGridTable'>
+            <table className='paleBlueRows'>
                 <thead>
                     <tr>
                         <td>
@@ -43,3 +43,5 @@ export default props => {
         </div>
     )
 }
+
+export default ItemList

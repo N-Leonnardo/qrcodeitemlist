@@ -1,12 +1,10 @@
-
-   
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Qrcodescanner from '../components/Qrcodescanner';
 import ItemList from '../components/ItemList';
+import '../styles/Main.css'
 
-
-export default () => {
+const Main = () => {
     const [item, setItem] = useState([]);
     
     useEffect(()=>{
@@ -15,11 +13,13 @@ export default () => {
         .catch(err=>console.log("Error: ", err))
     },[])
 
-    
+
     return(
-        <>
+        <div className='maincss'>
             <Qrcodescanner />
             <ItemList item={item}/>
-        </>
+        </div>
     )
 }
+
+export default Main
