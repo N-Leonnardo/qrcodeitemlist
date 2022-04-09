@@ -28,15 +28,15 @@ function Qrcodescanner() {
 
   return (
     <div>
-          <div className='displayf'>
+          <div className='containerForm displayf'>
               
                 <form onSubmit={onSubmitHandler}>
             <p>
                 <label>Product Name</label><br/>
                 <input type="text" onChange={(e)=>setName(e.target.value)} value={name}/>
             </p>
-            <p>
-                <label for="cars">Choose a category:</label>
+            <p className='flexvertical' >
+                <label for="category">Choose a category:</label>
                     <select onChange={(e)=>setType(e.target.value)} value={type}>
                         <option value=""></option>
                         <option value="Alcoholic drinks">Alcoholic drinks</option>
@@ -58,9 +58,9 @@ function Qrcodescanner() {
             <input type="submit"/>
         </form>
 
-                <div>
+                <div className=''>
                 <BarcodeScannerComponent
-                    width={500}
+                    width={300}
                     height={400}
                     onUpdate={(err, result) => {
                       if (result) setBarcode(result.text);
