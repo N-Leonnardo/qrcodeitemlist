@@ -3,7 +3,7 @@ import '../styles/ItemList.css'
 
 const ItemList = (props) => {
     return (
-        <div className='displayF'>
+        <div className='itemListContainer displayF'>
             <h1>Item List</h1>
             <table className='minimalistBlack'>
                 <thead>
