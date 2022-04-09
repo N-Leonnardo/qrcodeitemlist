@@ -1,5 +1,6 @@
 .navbar{
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 69%);
     width: 90vw;
 
     display: flex;
@@ -7,10 +8,13 @@
     justify-content: space-between;
 
     padding: 10px 5vw 10px 5vw;
+    margin: 0 0 50px 0;
 }
 
 .navbar img{
 width: 300px;
 }
 
-.links
+.links a{
+    margin: 40px;
+}
