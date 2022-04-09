@@ -1,10 +1,23 @@
-.widthtwo{
-    width: 500px;
-}
+
 
 .displayf{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.flexvertical{
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+}
+
+.containerForm{
+    border: .2px solid #d3d3d327;
+    padding: 50px;
+    border-radius: 20px;
 }
