@@ -1,0 +1,16 @@
+.navbar{
+    background-color: black;
+    width: 90vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 5vw 10px 5vw;
+}
+
+.navbar img{
+width: 300px;
+}
+
+.links
