@@ -1,6 +1,13 @@
 .maincss{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    background: #111218;
+    height: 100vh;
+    color: white;
+}
+
+.containersDisplay{
+    display: flex;
     justify-content: space-evenly;
     flex-direction: row;
 }

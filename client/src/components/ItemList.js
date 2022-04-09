@@ -5,7 +5,7 @@ const ItemList = (props) => {
     return (
         <div className='displayF'>
             <h1>Item List</h1>
-            <table className='paleBlueRows'>
+            <table className='minimalistBlack'>
                 <thead>
                     <tr>
                         <td>
@@ -16,6 +16,9 @@ const ItemList = (props) => {
                         </td>
                         <td>
                             Barcode
+                        </td>
+                        <td>
+                            Actions
                         </td>
                     </tr>
                 </thead>
@@ -35,6 +38,9 @@ const ItemList = (props) => {
                     </td>
                     <td>
                         {item.barcode}
+                    </td>
+                    <td>
+                        Actions
                     </td>
                     </tr>
                         ))}

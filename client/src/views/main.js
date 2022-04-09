@@ -2,7 +2,8 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Qrcodescanner from '../components/Qrcodescanner';
 import ItemList from '../components/ItemList';
-import '../styles/Main.css'
+import '../styles/Main.css';
+import Navbar from '../components/Navbar'
 
 const Main = () => {
     const [item, setItem] = useState([]);
@@ -16,8 +17,11 @@ const Main = () => {
 
     return(
         <div className='maincss'>
-            <Qrcodescanner />
-            <ItemList item={item}/>
+            <Navbar/>
+            <div className='containersDisplay'>
+                <Qrcodescanner />
+                <ItemList item={item}/>
+            </div>
         </div>
     )
 }
