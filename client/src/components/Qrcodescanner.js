@@ -29,6 +29,7 @@ function Qrcodescanner() {
   return (
     <div>
           <div className='containerForm displayf'>
+            <h1>Scan your item here</h1>
               
                 <form onSubmit={onSubmitHandler}>
             <p>
@@ -55,10 +56,8 @@ function Qrcodescanner() {
                     {barcode}
                 </p>
             </p>
-            <input type="submit"/>
-        </form>
 
-                <div className=''>
+                <div className='scanner'>
                 <BarcodeScannerComponent
                     width={300}
                     height={400}
@@ -69,6 +68,8 @@ function Qrcodescanner() {
                   <p>{barcode}</p>
 
                 </div>
+                    <input className='submitbtn' type="submit"/>
+                </form>
                 <div>
 
 

@@ -20,4 +20,25 @@ input {
     border: .2px solid #d3d3d327;
     padding: 50px;
     border-radius: 20px;
+    align-items: center;
+
+}
+
+.submitbtn{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+input{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.scanner{
+    border-radius: 30px;
 }

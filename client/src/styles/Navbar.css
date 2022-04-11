@@ -1,6 +1,7 @@
 .navbar{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 69%);
+
+    background: rgb(29,29,29);
+    background: linear-gradient(180deg, rgba(29,29,29,0.8505996148459384) 0%, rgba(0,212,255,0) 69%);    
     width: 90vw;
 
     display: flex;
