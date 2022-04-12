@@ -40,7 +40,7 @@ const ItemList = (props) => {
                         {item.barcode}
                     </td>
                     <td>
-                        Actions
+                        {item._id}
                     </td>
                     </tr>
                         ))}

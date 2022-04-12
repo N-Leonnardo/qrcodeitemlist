@@ -2,10 +2,10 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Qrcodescanner from '../components/Qrcodescanner';
 import ItemList from '../components/ItemList';
-import '../styles/Main.css';
+import '../styles/Admin.css';
 import Navbar from '../components/Navbar'
 
-const Main = () => {
+const Admin = () => {
     const [item, setItem] = useState([]);
     
     useEffect(()=>{
@@ -26,4 +26,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Admin
