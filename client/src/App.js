@@ -1,12 +1,24 @@
 import './App.css';
-import Main from './views/Main.js';
+import Admin from './views/Admin.js';
+
+
+import {BrowserRouter, Switch, Route} from "react-router-dom"
 
 function App() {
   return (
     <div className="App">
-      <Main />
+      <BrowserRouter>
+        <Switch>
+
+          <Route path='/'>
+            <Admin/>
+          </Route>
+
+
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
 
-export default App;
+export default App; 
