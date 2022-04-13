@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Switch>
 
-          <Route path='/'>
+          <Route path='/admin'>
             <Admin/>
           </Route>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ItemList.css'
+import '../styles/components/ItemList.css'
 
 const ItemList = (props) => {
     return (

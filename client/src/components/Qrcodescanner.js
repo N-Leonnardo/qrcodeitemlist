@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../styles/Qrcodescanner.css';
+import '../styles/components/Qrcodescanner.css';
 import axios from 'axios';
 import BarcodeScannerComponent from "react-qr-barcode-scanner";
 
