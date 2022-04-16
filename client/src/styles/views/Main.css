@@ -1,7 +1,7 @@
-.admincss{
+.maincss{
     display: flex;
     flex-direction: column;
-    background: #111218;
+    background: #ffffff;
     min-height: 100vh;
 }
 

@@ -2,12 +2,13 @@ const req = require('express/lib/request');
 const {Item}  = require ('../models/item.model');
 //C
 module.exports.createItem = (request, response) =>{
-    const { name, type , desc, barcode } = request.body;
+    const { name, type , desc, barcode, img } = request.body;
     Item.create({
         name,
         type,
         desc,
-        barcode
+        barcode,
+        img
     })
     .then(person=>response.json(person))
     .catch(err=>response.status(400).json(err))

@@ -14,8 +14,8 @@ const Main = () => {
             <div className='navbar'>
                 <img src='https://i.imgur.com/E2lce3U.png' />
                 <div className="links">
-                    <a>Home</a>
-                    <a>About Leo</a>
+                    <a href="/" >Home</a>
+                    <a href="https://n-leonnardo.github.io/leonnardo.io/" target="blank">About Leo</a>
                 </div>
             </div>
             <div>

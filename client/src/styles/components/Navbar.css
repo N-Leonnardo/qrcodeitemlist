@@ -1,3 +1,10 @@
+*{
+    text-decoration: none;
+}
+
+a{
+    color: white;
+}
 .navbar{
 
     background: rgb(29,29,29);

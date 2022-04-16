@@ -22,7 +22,11 @@ const ItemSchema = new mongoose.Schema({
         required: [true, "Barcode is required"],
         minlength: [2, "Barcode should be at least 2 characters"]
 
-    }
+    },
+    img: {
+        type: String,
+        required: [true, "Image is required"]}
+
 
 },{timestamps: true });
 

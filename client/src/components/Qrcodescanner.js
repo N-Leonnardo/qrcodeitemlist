@@ -9,6 +9,7 @@ function Qrcodescanner() {
   const [type, setType] = useState("");
   const [desc, setDesc] = useState("");
   const [barcode, setBarcode] = useState("");
+  const [img, setImg] = useState("")
 
 
 
@@ -19,7 +20,8 @@ function Qrcodescanner() {
         name,
         type,
         desc,
-        barcode
+        barcode,
+        img
     })
         .then(res=>console.log(res))
         .catch(err=>console.log(err))
@@ -49,6 +51,13 @@ function Qrcodescanner() {
             <p>
                 <label>Description</label><br/>
                 <input type="text" onChange={(e)=>setDesc(e.target.value)} value={desc}/>
+            </p>
+            <p>
+                <label>Image</label><br/>
+                <input type="text" onChange={(e)=>setImg(e.target.value)} value={img}/>
+                <img 
+                className='img-preview'
+                src={img} />
             </p>
             <p>
                 <label>Barcode</label><br/>

@@ -42,3 +42,8 @@ input{
 .scanner{
     border-radius: 30px;
 }
+
+.img-preview{
+    width: 200px;
+    margin: 10px;
+}

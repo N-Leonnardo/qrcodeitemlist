@@ -16,7 +16,7 @@ const Admin = () => {
 
 
     return(
-        <div className='maincss'>
+        <div className='admincss'>
             <Navbar/>
             <div className='containersDisplay'>
                 <Qrcodescanner />
