@@ -1,6 +1,5 @@
-import './App.css';
 import Admin from './views/Admin.js';
-
+import Main from './views/Main.js';
 
 import {BrowserRouter, Switch, Route} from "react-router-dom"
 
@@ -12,6 +11,10 @@ function App() {
 
           <Route path='/admin'>
             <Admin/>
+          </Route>
+          
+          <Route path='/'>
+            <Main/>
           </Route>
 
 
