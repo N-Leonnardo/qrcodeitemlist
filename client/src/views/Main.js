@@ -2,8 +2,6 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Navbar from '../components/Navbar'
 import ItemShowcase from '../components/ItemShowcase';
-import '../styles/views/Main.css'
-
 
 const Main = () => {
     

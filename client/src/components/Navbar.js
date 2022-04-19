@@ -1,6 +1,4 @@
 import React from "react";
-import '../styles/components/Navbar.css'
-
 const Main = () => {
 
     const onClickHandler = e => {

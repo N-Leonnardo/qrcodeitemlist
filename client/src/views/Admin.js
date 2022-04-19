@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Qrcodescanner from '../components/Qrcodescanner';
 import ItemList from '../components/ItemList';
-import '../styles/views/Admin.css';
 import Navbar from '../components/Navbar'
 
 const Admin = () => {

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/components/ItemShowcase.css'
 
 
 const ItemShowcase = (props) => {
