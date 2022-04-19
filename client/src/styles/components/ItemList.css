@@ -9,7 +9,8 @@
 .itemListContainer{
   border: .2px solid #d3d3d327;
   border-radius: 15px;
-  width: 90%;
+  width: 50%;
+  padding: 30px;
 }
 
 

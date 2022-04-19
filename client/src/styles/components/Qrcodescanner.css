@@ -17,10 +17,11 @@ input {
 }
 
 .containerForm{
-    width: 90%;
+    width: 100%;
     border: .2px solid #d3d3d327;
     border-radius: 15px;
     align-items: center;
+    padding: 30px;
 
 }
 
@@ -37,10 +38,6 @@ input{
     padding: 5px;
     border-radius: 10px;
     border: none;
-}
-
-.scanner{
-    border-radius: 30px;
 }
 
 .img-preview{
