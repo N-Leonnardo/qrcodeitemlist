@@ -8,10 +8,8 @@
 
 .itemListContainer{
   border: .2px solid #d3d3d327;
-  padding: 50px;
   border-radius: 15px;
-  width: 50%;
-  margin-left: 20px;
+  width: 90%;
 }
 
 
@@ -48,3 +46,4 @@ table.minimalistBlack tfoot {
 table.minimalistBlack tfoot td {
   font-size: 14px;
 }
+

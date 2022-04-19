@@ -18,7 +18,7 @@ const Admin = () => {
     return(
         <div className='admincss'>
             <Navbar/>
-            <div className='containersDisplay'>
+            <div className='containers-Display'>
                 <Qrcodescanner />
                 <ItemList item={item}/>
             </div>

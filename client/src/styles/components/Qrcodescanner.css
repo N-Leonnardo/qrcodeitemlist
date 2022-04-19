@@ -17,11 +17,10 @@ input {
 }
 
 .containerForm{
+    width: 90%;
     border: .2px solid #d3d3d327;
-    padding: 50px;
     border-radius: 15px;
     align-items: center;
-    margin: 10px;
 
 }
 
@@ -48,9 +47,3 @@ input{
     width: 200px;
     margin: 10px;
 }
-
-@media only screen and (max-width: 800px) {
-    .containerForm{
-        width: 100%;
-    }
-  }
