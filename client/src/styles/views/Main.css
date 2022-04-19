@@ -1,3 +1,7 @@
+*{
+    color: black;
+}
+
 .maincss{
     display: flex;
     flex-direction: column;

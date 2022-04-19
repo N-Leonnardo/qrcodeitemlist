@@ -4,9 +4,10 @@ import '../../styles/components/ItemShowcase.css'
 
 const ItemShowcase = (props) => {
     return (
+        <div className='displayF'>
         <div className='gridItem'>
                         {props.item.map((item, index)=>(
-                    <div className='item-box'>
+                    <div className='item-box displayF'>
 
                     <img className='product-img' src={item.img}/>
                     <h1>
@@ -17,6 +18,7 @@ const ItemShowcase = (props) => {
                     </p>
                             </div>
                         ))}
+        </div>
         </div>
     )
 }
