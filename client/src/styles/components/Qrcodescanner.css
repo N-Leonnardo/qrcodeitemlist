@@ -47,3 +47,9 @@ input{
     width: 200px;
     margin: 10px;
 }
+
+@media only screen and (max-width: 800px) {
+    .containerForm{
+        width: 100%;
+    }
+  }

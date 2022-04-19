@@ -5,15 +5,17 @@
     min-height: 100vh;
 }
 
-.containersDisplay{
+.containers-Display{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
 }
 
 @media only screen and (max-width: 800px) {
-    .containersDisplay{
+    .containers-Display{
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
     }
   }
