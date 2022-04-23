@@ -1,10 +1,10 @@
 import React from "react";
 const Main = () => {
 
-    const onClickHandler = e => {
-        const alert = document.getElementById("alert-navbar")
-        alert.remove()
-    }
+    // const onClickHandler = e => {
+    //     const alert = document.getElementById("alert-navbar")
+    //     alert.remove()
+    // }
 
 
     return(
@@ -17,7 +17,7 @@ const Main = () => {
                 </div>
             </div>
             <div>
-                <div className="alert-navbar" id="alert-navbar" onClick={onClickHandler}>
+                {/* <div className="alert-navbar" id="alert-navbar" onClick={onClickHandler}>
                     <p>
                         This is a website that you can scan a barcode and add it to our database. Please, dont mess it up or you will be banned.
                     </p>
@@ -25,7 +25,7 @@ const Main = () => {
                     <p>
                         x
                     </p>
-                </div>
+                </div> */}
             </div>
         </div>
     )
