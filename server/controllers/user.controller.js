@@ -24,6 +24,12 @@ module.exports.getOne = (req, res) =>{
     .catch(err=>res.json(err))
 }
 
+module.exports.getOneBarcode = (req, res) =>{
+    User.findOne({barcode: req.params.barcode})
+    .then(product=>res.json(product))
+    .catch(err=>res.json(err))
+}
+
 //U
 
 module.exports.updateUser = (request, response) =>{
