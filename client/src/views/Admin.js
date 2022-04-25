@@ -4,6 +4,8 @@ import Qrcodescanner from '../components/Qrcodescanner';
 import ItemList from '../components/ItemList';
 import Navbar from '../components/Navbar'
 
+import '../styles/views/Admin.css'
+
 const Admin = () => {
     const [item, setItem] = useState([]);
     

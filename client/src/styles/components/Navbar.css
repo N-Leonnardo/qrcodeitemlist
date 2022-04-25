@@ -1,0 +1,18 @@
+.navbar{
+    background-color: rgb(58, 58, 58);
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar a{
+    margin-right: 50px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar img{
+    width: 300px;
+}

@@ -1,5 +1,5 @@
 import Admin from './views/Admin.js';
-import Main from './views/Main.js';
+
 
 import {BrowserRouter, Switch, Route} from "react-router-dom"
 
@@ -13,11 +13,9 @@ function App() {
             <Admin/>
           </Route>
           
-          <Route path='/'>
+          {/* <Route path='/'>
             <Main/>
-          </Route>
-
-s
+          </Route> */}
         </Switch>
       </BrowserRouter>
     </div>
