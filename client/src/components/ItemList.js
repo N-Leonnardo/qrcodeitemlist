@@ -1,10 +1,11 @@
 import React from 'react';
+import '../styles/components/ItemList.css'
 
 const ItemList = (props) => {
     return (
         <div className='itemListContainer displayF'>
             <h1>Item List</h1>
-            <table className='minimalistBlack'>
+            <table className='steelBlueCols'>
                 <thead>
                     <tr>
                         <td>
@@ -18,6 +19,9 @@ const ItemList = (props) => {
                         </td>
                         <td>
                             Actions
+                        </td>
+                        <td>
+                            Image
                         </td>
                     </tr>
                 </thead>
@@ -40,6 +44,9 @@ const ItemList = (props) => {
                     </td>
                     <td>
                         {item._id}
+                    </td>
+                    <td>
+                    <img src={item.img} alt="Girl in a jacket" width="50" height="50"/>
                     </td>
                     </tr>
                         ))}

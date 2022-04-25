@@ -1,11 +1,18 @@
 .admincss{
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(246, 246, 246);
 }
 
 .containers-Display{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     margin: 30px;
 }
+
+@media screen and (max-width: 992px) {
+    .containers-Display{
+        align-items: center;
+        flex-direction: column;
+    }
+  }
